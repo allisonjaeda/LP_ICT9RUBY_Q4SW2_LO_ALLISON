@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Events and Functions</title>
+</head>
+<body>
+	<h1>CALCULATOR</h1>
+<style>
+	h1{
+		font-family: Rockwell;
+		font-size: 50px;
+		text-align: center;
+	}
+</style>
+<form>
+	<input type="text" placeholder="Enter the 1st number" id="id1"><br>
+	<input type="text" placeholder="Enter the 1st number" id="id2"><br>
+	    <input type="submit" value="Multiply" onclick="compute()">
+	    <input type="submit" value="Divide" onclick="divide()">
+	    <input type="submit" value="Subtraction" onclick="subtraction()">
+	    <input type="submit" value="Addition" onclick="addition()">
+    </form>
+    <script> 
+        function compute() {
+             num1 = document.getElementById('id1').value;
+             num2 = document.getElementById('id2').value;
+             product = num1 * num2;
+                window.alert(product); 
+        }
+        function divide() {
+             num1 = document.getElementById('id1').value;
+             num2 = document.getElementById('id2').value;
+             quotient = num1 / num2;
+                window.alert(quotient); 
+            }
+        function subtraction() {
+             num1 = document.getElementById('id1').value;
+             num2 = document.getElementById('id2').value;
+             difference = num1 - num2;
+                window.alert(difference); 
+        }
+        function addition() {
+             num1 = Number(document.getElementById('id1').value);
+             num2 = Number(document.getElementById('id2').value);
+             sum = num1 + num2;
+                window.alert(sum); 
+        }
+    </script>
+</body>
+</html>
